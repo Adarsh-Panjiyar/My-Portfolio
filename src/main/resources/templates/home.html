@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Adarsh Panjiyar | Java Full Stack Developer</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="nav-container">
+        <a th:href="@{/}" class="logo">𝔸𝔻𝔸ℝ𝕊ℍ ℙ𝔸ℕ𝕁𝕀𝕐𝔸ℝ</a>
+        <ul class="nav-links">
+            <li><a th:href="@{/}">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- HOME -->
+<!-- HERO SECTION -->
+<section id="home" class="hero-section">
+
+    <div class="hero-container">
+
+        <!-- LEFT CONTENT -->
+        <div class="hero-left">
+            <h1>Hi, I'm <span>Adarsh Panjiyar</span></h1>
+            <h2>Java Full Stack Developer</h2>
+
+           <p>
+             <strong>
+                   Java Developer with hands-on experience in building Spring Boot–based
+                   backend and full-stack applications using REST APIs,
+                   Spring Security, and MySQL.
+               </strong>
+           </p>
+
+            <div class="hero-buttons">
+                <a th:href="@{/files/ADARSH_RESUME-.pdf}"
+                   class="btn primary"
+                   target="_blank">
+                    Download Resume
+                </a>
+
+                <div class="social-icons">
+                    <a href="https://github.com/Adarsh-Panjiyar" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/adarsh-panjiyar/" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:adarshpanjiyar@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- RIGHT IMAGE -->
+        <div class="hero-right">
+            <div class="profile-glow">
+                <img src="/files/AP.jpg" alt="Adarsh Panjiyar">
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ABOUT -->
+<section id="about" class="section">
+    <h2 class="section-title">About Me</h2>
+    <p class="section-text">
+        I'm a Java Full Stack Developer with strong foundations in Java,
+        Spring Boot, Spring MVC, Spring Data JPA, and Hibernate.
+        I have built secure and scalable applications involving
+        authentication, authorization, and database-driven business logic.
+    </p>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="section timeline-section">
+    <h2 class="section-title">Education</h2>
+
+    <div class="timeline">
+
+        <!-- 10th -->
+        <div class="timeline-item left">
+            <span class="year-label"><b>2019</b></span>
+            <div class="timeline-card">
+                <h3>Secondary School (10th)</h3>
+                <p>
+                    Completed Secondary School education from
+                    <strong>St. Michael's School, Lalganj, Bihar</strong>
+                    under the <strong>CBSE Board</strong>.
+                </p>
+                <p class="score">Percentage: 67%</p>
+            </div>
+        </div>
+
+        <!-- 12th -->
+        <div class="timeline-item right">
+            <span class="year-label"><b>2020–21</b></span>
+            <div class="timeline-card">
+                <h3>Senior Secondary School (12th)</h3>
+                <p>
+                    Completed Senior Secondary education from Hyderabad
+                    under the <strong>TSBIE Board</strong> with
+                    <strong>Physics, Chemistry, and Mathematics (PCM)</strong>.
+                </p>
+                <p class="score">Percentage: 84.6%</p>
+            </div>
+        </div>
+
+        <!-- B.Tech -->
+        <div class="timeline-item left">
+            <span class="year-label"><b>2021–25</b></span>
+            <div class="timeline-card">
+                <h3>B.Tech – Computer Science & Engineering</h3>
+                <p>
+                    Completed Bachelor of Technology in Computer Science
+                    from <strong>Uttaranchal University, Dehradun</strong>.
+                </p>
+                <p class="score">CGPA: 7.76 / 10.00</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- SKILLS -->
+<section id="skills" class="section">
+    <h2 class="section-title">Skills</h2>
+
+    <div class="skills-grid">
+        <div class="skill-card">Java</div>
+        <div class="skill-card">Spring Boot</div>
+        <div class="skill-card">Spring Framework</div>
+        <div class="skill-card">Spring MVC</div>
+        <div class="skill-card">Spring Data JPA</div>
+        <div class="skill-card">Hibernate ORM</div>
+        <div class="skill-card">Spring Security</div>
+        <div class="skill-card">REST APIs</div>
+        <div class="skill-card">MySQL</div>
+        <div class="skill-card">Thymeleaf</div>
+        <div class="skill-card">HTML</div>
+        <div class="skill-card">CSS</div>
+        <div class="skill-card">JavaScript</div>
+        <div class="skill-card">Git & GitHub</div>
+        <div class="skill-card">Maven</div>
+        <div class="skill-card">Postman</div>
+        <div class="skill-card">OOP'S</div>
+        <div class="skill-card">DSA</div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card-grid">
+            <h3>Warehouse Management System (WMS)</h3>
+            <p>
+                Spring Boot–based system designed to manage inbound, outbound,
+                and inventory operations. Implemented REST APIs and database
+                layers for real-time stock tracking and warehouse transactions.
+            </p>
+            <span class="tech">
+                Tech: Spring Boot, Spring Data JPA, Hibernate, MySQL, REST APIs
+            </span>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card-grid">
+            <h3>Smart Contact Manager</h3>
+            <p>
+                Full-stack contact management application with secure user
+                authentication and authorization using Spring Security.
+                Supports CRUD operations with Thymeleaf-based UI.
+            </p>
+            <span class="tech">
+                Tech: Spring Boot, Spring Security, Thymeleaf, MySQL
+            </span>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card-grid">
+            <h3>To-Do List Application</h3>
+            <p>
+                Responsive task management web application with backend logic
+                using Spring and Hibernate. Provides persistent storage and
+                CRUD functionality with MySQL integration.
+            </p>
+            <span class="tech">
+                Tech: HTML, CSS, Spring, Hibernate, MySQL 
+            </span>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- CONTACT -->
+<section id="contact" class="section contact-section">
+    <h2 class="section-title">Contact <span>Me</span></h2>
+
+    <div class="contact-container">
+    
+<!-- SUCCESS MESSAGE -->
+<div th:if="${successMessage}" class="success-wrapper">
+    <div class="success-message">
+        <i class="fas fa-check-circle"></i>
+        <span th:text="${successMessage}"></span>
+    </div>
+</div>
+
+        <!-- LEFT FORM -->
+        <form th:action="@{/contact}" method="post" class="contact-form">
+        
+
+            <input type="text" name="name" placeholder="Full Name" required>
+
+            <input type="email" name="email" placeholder="Email" required>
+
+            <input type="tel" name="phone" placeholder="Phone Number">
+
+            <input type="text" name="subject" placeholder="Subject" required>
+
+            <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+
+            <button type="submit" class="btn primary">Send Message</button>
+            
+                     
+        </form>
+
+    </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="footer">
+    <p>© 2026 Adarsh Panjiyar. All rights reserved.</p>
+</footer>
+
+
+
+</body>
+</html>
